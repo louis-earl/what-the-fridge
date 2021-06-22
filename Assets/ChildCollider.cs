@@ -16,12 +16,12 @@ public class ChildCollider : MonoBehaviour
         
     }
 
+    /*
     private void FixedUpdate()
     {
         Collider2D[] results = new Collider2D[0];
         GetComponent<Collider2D>().OverlapCollider(new ContactFilter2D(), results);
-
-        Debug.Log(results.Length);
     }
+    */
 
 }

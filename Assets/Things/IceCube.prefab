@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 9212662296309320090}
   - component: {fileID: 9212662296309320088}
   - component: {fileID: 2869810364127615624}
+  - component: {fileID: 6327468042380430160}
   - component: {fileID: -6929421302227577390}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: IceCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +125,19 @@ MonoBehaviour:
   health: 20
   radius: 0.2
   isBroken: 0
-  isPowered: 0
+  childCollider: {fileID: 0}
+--- !u!114 &6327468042380430160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9212662296309320094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34cbccb8ffbf1664481f86c2af03aef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!58 &-6929421302227577390
 CircleCollider2D:
   m_ObjectHideFlags: 0

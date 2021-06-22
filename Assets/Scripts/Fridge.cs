@@ -24,5 +24,27 @@ public class Fridge : MonoBehaviour
         {
             thing.SpawnChild(IcePrefab);
         }
+
+        /*
+        int angle = Random.Range(0, 360);
+        Vector2 unitVector = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
+        Vector2 outerPoint = (unitVector * 10) + (Vector2)transform.position;
+
+        // Cast a ray in random rotation 
+        RaycastHit2D hit = Physics2D.Raycast(outerPoint, -unitVector);
+
+        // If it hits something...
+        if (hit.collider != null)
+        {
+            Debug.DrawRay(hit.point, unitVector, Color.red, 2f);
+            GameObject fragmentInstance = Instantiate(
+                    IcePrefab,
+                    hit.point,
+                    gameObject.transform.rotation,
+                    gameObject.transform.parent
+                    );
+        }
+        */
+
     }
 }

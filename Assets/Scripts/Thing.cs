@@ -29,7 +29,7 @@ public class Thing : MonoBehaviour
         if (health <= 0) Debug.LogWarning("Invalid health");
         if (radius <= 0) Debug.LogWarning("Invalid radius");
         if (childCollider == null) Debug.LogWarning("Invalid childCollider");
-        childCollider.SetActive(false);
+        else childCollider.SetActive(false);
 
     }
 
